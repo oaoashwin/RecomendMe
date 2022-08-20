@@ -1,0 +1,69 @@
+----
+Git commonds
+----
+git status -s
+- To check the status of all the files/codes in repogetry
+git touch fileName
+-This is used to create a file
+git status
+- to check the status of all codes
+git checkout
+- to move back your code to privious code ()
+git add -A 
+- This is used to move all code to staged area
+git add fileName
+- This is used to move a single typed file to staged area
+clear
+- clear the terminal
+touch .gitignore
+- Create a file named gitignore and In that file you type anyfile name will be ignored by git and Is not
+going to show on git status
+git commit -a -m "Type the thing you have done with files"
+- This commond commit all file changes to files in one time, you don't have to write all commit one by one
+git commit -m "Type here"
+- Maybe selects the changed file and commits it 
+git rm --cached fileName
+- fileName ki jagah par jo भी फाइल का नाम डाला जायेगा वो अनदेखा कर दी जाएगी
+git log -p -3
+- git logs se aapko saare commits dikh jayenge our git log -p -numbers se aapko aapne jitne numbers daale hai
+utne last commits dikh jayenge
+git branch branchName
+- isake istemaal se ek nayi branch ban jayegi
+git branch
+- Iske istemaal se aap check kar sakte hai ki kitne branch hai
+git checkout branchName
+- iske istemaal se aap master ya jis bhi branch me aap hai waha se us branch me chale jayenge jiska aapne 
+naam likha hai
+git merge branchName
+- You have to have on the master branch and should type the name of the branch that you want to merge on master
+branch and that it, your branch is merged on master branch
+git init
+- Yah commond repogetory ko banane ke liye kiya jata hai, ya bas git ki स्तापना karne ke liye, ki ha yaha par
+git hai.
+git remote add OriginName link
+-Ye jo link hai uska naam hi OriginName hai, isase local our remote repository connect ho jata hai.
+git remote
+- Ye likhane se aapko remote repository jitne bhi hai wo bata dega
+git remote -v
+ye commond aapko fetch our push kaha se karoge wo bata dega
+git push origin master
+iska git ka matlab ye hua ki push kar do master ko origin me. (Private repository ka access aapke pass nahi
+hoga isliye ye aapko error dega)
+
+------------
+gitignore के अन्दर क्या क्या लिख सकते है 
+-------------
+इसके अन्दर जो भी लिखा जायेगा वो अनदेखा कर दया जायेगा 
+/mylogs.log - ये लिखने पर किसी फाइल के अन्दर ये नाम के फाइल को अनदेखा कर दिया जायेगा
+*.fileExtension - ये लिखने पर वो extension वाले सारे फाइल्स अनदेखा कर दिए जायेंगे 
+folderName/ - ये लिखने पर वो folder को ही अनदेखा कर दिया जायेगा
+
+-------
+Explainations
+-------
+Git branch kya hota hai?
+- Git branch ek alag copy bana deta hai master branch ki, our alag copy babane se hoga kya? - isase ye hoga ki
+agar aapne koi minor sa changes kiya jo aapko to laga ki sab thik hi rahega iske karne ke baad, lekin ulta
+puri website hi down ho gayi uske chakkar me, isliye aapko ek branch kar uspar kaam karna chahiye kyoki iske 
+istemaal se master branch par koi asar nahi padega our aap apna changes aaram se kar sakenge.
+-------
