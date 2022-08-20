@@ -49,6 +49,14 @@ ye commond aapko fetch our push kaha se karoge wo bata dega
 git push origin master
 iska git ka matlab ye hua ki push kar do master ko origin me. (Private repository ka access aapke pass nahi
 hoga isliye ye aapko error dega)
+git rm fileName
+- Iske istemaal se kisi file ko aap delete kar sakte hai
+git rm -f fileName
+- iske istemaal se aap kisi file ko staged area se ya forced delete kar sakte hai
+git rm -r 
+- iska istemaal repository/folders delete karne ke liye karte hai
+git rm -r -f 
+- Iska istemaal forced delete karne ke liye karte hai
 
 ------------
 gitignore के अन्दर क्या क्या लिख सकते है 
