@@ -10,15 +10,10 @@ body {
 }
 
 h1 {
+    font-family: 'Aboreto';
     font-size: 48px;
     line-height: 56px;
     color: #0F172A;
-}
-
-p {
-    font-size: 16px;
-    color: #0F172A;
-    margin: 15px 0 20px 0;
 }
 
 /*Header Here */
@@ -27,9 +22,15 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 28px 64px;
+    padding: 20px 64px;
     background-color: transparent;
     border-bottom: 1px solid #E2E8F0;
+    /*Something is wrong because background color is white somehow*/
+}
+
+header a img {
+    width: 124px;
+    height: 32px;
 }
 
 #socials{
@@ -48,8 +49,8 @@ p {
     color: #0F172A;
     transition: 0.3s ease-in-out;
 }
-#socials .insta:hover,
-#socials .insta.active{
+
+#socials .insta:hover{
     color: #E1306C;
 }
 #socials .fb:hover{
@@ -57,4 +58,39 @@ p {
 }
 #socials .twitter:hover{
     color: #1DA1F2;
+}
+
+/* hero area */
+
+#hero {
+    background-image: url("images/others/BlurLayer.png");
+    height: 60vh;
+    width: 100%;
+    padding: 0px 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#hero h1{
+    
+}
+#hero p{
+    margin: 24px 0 48px 0;
+    font-family: sans-serif;
+    color: #64748B;
+}
+#hero .emailArea input{
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    padding: 18px;
+    border: 1px solid #94A3B8;
+    border-radius: 8px;
+    width: 600px;
 }
