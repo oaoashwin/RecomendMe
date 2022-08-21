@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif, Aboreto;
+}
+
+body {
+    width: 100%;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 56px;
+    color: #0F172A;
+}
+
+p {
+    font-size: 16px;
+    color: #0F172A;
+    margin: 15px 0 20px 0;
+}
+
+/*Header Here */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 64px;
+    background-color: transparent;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+#socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#socials li{
+    list-style: none;
+    padding: 0px 24px;
+}
+
+#socials li a{
+    text-decoration: none;
+    color: #0F172A;
+    transition: 0.3s ease-in-out;
+}
+#socials .insta:hover,
+#socials .insta.active{
+    color: #E1306C;
+}
+#socials .fb:hover{
+    color: #1DA1F2;
+}
+#socials .twitter:hover{
+    color: #1DA1F2;
+}
