@@ -1,7 +1,9 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+/* old *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
     font-family: 'inter', sans-serif, Aboreto;
 }
 
@@ -16,16 +18,17 @@ h1 {
     color: #0F172A;
 }
 
-/*Header Here */
+-- Header Here --
 
 #header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 64px;
-    background-color: transparent;
+    background-color: transparent; 
     border-bottom: 1px solid #E2E8F0;
-    /*Something is wrong because background color is white somehow*/
+    -- Something is wrong because background 
+    color is white somehow --
 }
 
 header a img {
@@ -60,7 +63,7 @@ header a img {
     color: #1DA1F2;
 }
 
-/* hero area */
+-- hero area --
 
 #hero {
     background-image: url("images/others/BlurLayer.png");
@@ -93,4 +96,33 @@ header a img {
     border: 1px solid #94A3B8;
     border-radius: 8px;
     width: 600px;
+}
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+}
+#header {
+    padding: 24px 64px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+#header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#header ul li {
+    list-style: none;
+    padding: 0 20px;
+}
+#header ul li img {
+    width: 20px;
+    height: 20px;
 }
