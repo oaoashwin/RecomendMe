@@ -1,105 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
 /* font-family: 'Aboreto', cursive; */
 
-/* old *{
-    margin: 0;
-    padding: 0;
-    
-    font-family: 'inter', sans-serif, Aboreto;
-}
-
-body {
-    width: 100%;
-}
-
-h1 {
-    font-family: 'Aboreto';
-    font-size: 48px;
-    line-height: 56px;
-    color: #0F172A;
-}
-
--- Header Here --
-
-#header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 64px;
-    background-color: transparent; 
-    border-bottom: 1px solid #E2E8F0;
-    -- Something is wrong because background 
-    color is white somehow --
-}
-
-header a img {
-    width: 124px;
-    height: 32px;
-}
-
-#socials{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#socials li{
-    list-style: none;
-    padding: 0px 24px;
-}
-
-#socials li a{
-    text-decoration: none;
-    color: #0F172A;
-    transition: 0.3s ease-in-out;
-}
-
-#socials .insta:hover{
-    color: #E1306C;
-}
-#socials .fb:hover{
-    color: #1DA1F2;
-}
-#socials .twitter:hover{
-    color: #1DA1F2;
-}
-
--- hero area --
-
-#hero {
-    background-image: url("images/others/BlurLayer.png");
-    height: 60vh;
-    width: 100%;
-    padding: 0px 64px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-#hero h1{
-    
-}
-#hero p{
-    margin: 24px 0 48px 0;
-    font-family: sans-serif;
-    color: #64748B;
-}
-#hero .emailArea input{
-    border: none;
-    -webkit-appearance: none;
-    -ms-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: transparent;
-    padding: 18px;
-    border: 1px solid #94A3B8;
-    border-radius: 8px;
-    width: 600px;
-}
-*/
-
 /* Header section */
 
 *{
@@ -183,10 +84,6 @@ body{
     border-radius: 30px 0px 0px 30px;
     border-width: 1px 0px 1px 1px;
 }
-/* ::placeholder{
-    color: #94A3B8;
-    transition: 0.5s;
-} */
 #form button {
     font-family: 'Inter', sans-serif;
     background: linear-gradient(90deg, #94A3B8 0%, #0F172A 100%);
@@ -205,5 +102,7 @@ body{
 }
 
 /* Products section */
+
+
 
 /* Footer section */
