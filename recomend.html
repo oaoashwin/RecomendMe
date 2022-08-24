@@ -39,21 +39,25 @@
     <a href="#"><img src="Images/Logos/Logo.svg" alt="Logo"></a>
 
     <ul>
-        <li><img src="Images/Icons/instagram.png"></li>
-        <li><img src="Images/Icons/twitter.png"></li>
-        <li><img src="Images/Icons/facebook.png"></li>
+        <a href="https://www.instagram.com/sugam.ashwin"><img src="Images/Icons/instagram.png"></a>
+        <a href="https://twitter.com/sugam_ashwin"><img src="Images/Icons/twitter.png"></a>
+        <a href="https://www.facebook.com/sugam.ashwin/"><img src="Images/Icons/facebook.png"></a>
     </ul>
 
 </header>
 
 <section id="hero">
-    <img src="Images/Others/BlurLayer.png" alt="">
-    <h1>Hero text</h1>
-    <p>subtext</p>
-    <form action="">
-        <input type="text">
-        <button>SubscribeMe</button>
-    </form>
+
+    <h1>Get best `product` recomendation in india</h1>
+    <p>Looking for a ‘product’ but didn’t know which one is best for you,<br>
+        Don’t worry we got you covered</p>
+
+    <form id="form" name="google-sheet">
+        <input type="email" name="Email" placeholder="youremail@example.com" required="required">
+        <button type="submit">SubscribeMe</button>
+        <div class="form_alerts"></div>
+    </from>
+
 </section>
 
 <section id="products">
@@ -76,6 +80,21 @@
         <li><a href="#">Feedback</a></li>
     </ul>
 </footer>
+
+
+<!-- Here is the script for google sheet -->
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx8DawULUK0nGldrLVPIGSf31MqyJukqPXSbYf58zM1nw-AoufYObmY7BJjkOM9ep5e_Q/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => window.alert("You are Subscribed"))
+        .catch(error => window.alert("Something went wrong? :(, Get help on ashwinchaurasiya777@gmail.com"))
+    })
+</script>
 
 </body>
 </html>

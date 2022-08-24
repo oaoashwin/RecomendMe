@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+/* font-family: 'Aboreto', cursive; */
 
 /* old *{
     margin: 0;
@@ -99,30 +100,110 @@ header a img {
 }
 */
 
+/* Header section */
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
 }
 body{
     display: grid;
 }
 #header {
-    padding: 24px 64px;
+    padding: 20px 64px;
     background: transparent;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #E2E8F0;
+}
+#header a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header a img {
+    width: auto;
+    height: 38px;
 }
 #header ul {
     display: flex;
     align-items: center;
     justify-content: center;
     
+    
 }
-#header ul li {
-    list-style: none;
-    padding: 0 20px;
-}
-#header ul li img {
+#header ul img {
     width: 20px;
     height: 20px;
+    padding: 16px 16px;
 }
+
+/* Hero section */
+
+#hero {
+    background-image: url("Images/Others/BlurLayer.png");
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #E2E8F0;
+}
+#hero h1 {
+    font-family: 'Aboreto', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+#hero p{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 16px 0px;
+    line-height: 24px;
+}
+#form{
+    padding: 40px 0 0 0;
+}
+#form input {
+    background-color: transparent;
+    border: 1px solid #94A3B8;
+    border-radius: 12px;
+    height: 48px;
+    border-radius: 30px 0px 0px 30px;
+    border-width: 1px 0px 1px 1px;
+    width: 700px;
+    font-size: 16px;
+    padding: 0 20px;
+    
+    /* outline if effect after click on input */
+}
+#form input:hover {
+    border: 1px solid #9cb2d1;
+    border-radius: 30px 0px 0px 30px;
+    border-width: 1px 0px 1px 1px;
+}
+/* ::placeholder{
+    color: #94A3B8;
+    transition: 0.5s;
+} */
+#form button {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(90deg, #94A3B8 0%, #0F172A 100%);
+    border: none;
+    color: white;
+    border-radius: 0px 30px 30px 0px;
+    width: 250px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+#form button:hover{
+    background: linear-gradient(90deg, #849fc5 0%, #0f214d 100%);
+}
+
+/* Products section */
+
+/* Footer section */
