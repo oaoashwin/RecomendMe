@@ -12,11 +12,12 @@ body{
     display: grid;
 }
 #header {
-    padding: 20px 64px;
+    padding: 1.25rem 4rem;
     background: transparent;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #E2E8F0;
+    height: 2rem;
 }
 #header a{
     display: flex;
@@ -25,19 +26,17 @@ body{
 }
 #header a img {
     width: auto;
-    height: 38px;
+    height: 2.5rem;
 }
 #header ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
 }
 #header ul img {
-    width: 20px;
-    height: 20px;
-    padding: 16px 16px;
+    width: 1.25rem;
+    height: 1.25rem;
+    padding: 1rem 1rem;
 }
 
 /* Hero section */
@@ -53,56 +52,102 @@ body{
 }
 #hero h1 {
     font-family: 'Aboreto', cursive;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
 }
 #hero p{
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    font-size: 1.25rem;
     text-align: center;
-    padding: 16px 0px;
-    line-height: 24px;
+    padding: 1rem 0px;
+    line-height: 1.8rem;
+    color: #64748B;
 }
 #form{
-    padding: 40px 0 0 0;
+    padding: 2.5rem 0 0 0;
 }
 #form input {
     background-color: transparent;
     border: 1px solid #94A3B8;
-    border-radius: 12px;
-    height: 48px;
-    border-radius: 30px 0px 0px 30px;
+    border-radius: 0.75rem;
+    height: 3rem;
+    border-radius: 2rem 0px 0px 2rem;
     border-width: 1px 0px 1px 1px;
     width: 700px;
-    font-size: 16px;
-    padding: 0 20px;
+    font-size: 1rem;
+    padding: 0 1.25rem;
     
     /* outline if effect after click on input */
 }
 #form input:hover {
     border: 1px solid #9cb2d1;
-    border-radius: 30px 0px 0px 30px;
+    border-radius: 2rem 0px 0px 2rem;
     border-width: 1px 0px 1px 1px;
 }
 #form button {
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(90deg, #94A3B8 0%, #0F172A 100%);
+    background: #4338CA;
     border: none;
     color: white;
-    border-radius: 0px 30px 30px 0px;
+    border-radius: 0px 2rem 2rem 0px;
     width: 250px;
-    height: 48px;
-    font-size: 16px;
+    height: 3rem;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.03em;
     cursor: pointer;
+    transition: 0.5s;
 }
 #form button:hover{
-    background: linear-gradient(90deg, #849fc5 0%, #0f214d 100%);
+    background: #3730A3;
 }
 
 /* Products section */
 
+#products{
+    display: flex;
+    padding: 4rem 4rem;
+    justify-content: space-between;
+}
+.span {
+    font-size: 3rem;
+    opacity: 0.16;
+    color: #0F172A;
+    font-family: 'Aboreto', cursive;
+
+}
+.P-photo {
+    width: 8rem;
+    height: 8rem;
+}
 
 
 /* Footer section */
+
+#footer {
+    display: flex;
+    padding: 0.75rem 4rem;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #E2E8F0;
+}
+#footer p {
+    color: #94A3B8;
+}
+#footer ul {
+    display: flex;
+    list-style: none;
+    
+}
+#footer ul li {
+    padding: 0 1rem;
+}
+#footer ul li a {
+    text-decoration: none;
+    color: #64748B;
+    transition: 0.3s;
+}
+#footer ul li a:hover {
+    color: #4338CA;
+    text-decoration: underline;
+}
