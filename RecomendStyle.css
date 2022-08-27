@@ -114,11 +114,24 @@ body{
     opacity: 0.16;
     color: #0F172A;
     font-family: 'Aboreto', cursive;
-
+}
+.C-B {
+    border: 1px solid #CBD5E1;
+    border-radius: 1.5rem;
 }
 .P-photo {
     width: 8rem;
     height: 8rem;
+}
+.upper-section {
+    display: flex;
+}
+.P-N {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.bottom-section {
+     display: flex;
 }
 
 
