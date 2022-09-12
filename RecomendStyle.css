@@ -1,261 +1,201 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
-/* font-family: 'Aboreto', cursive; */
+:root {
+    --clr-primary-400: hsla(245, 58%, 51%, 1);
+    --clr-primary-300: hsla(243, 75%, 59%, 1);
 
-/* Header section */
+    --clr-white: hsla(0, 0%, 100%, 1);
+    --clr-neutral-50: hsla(210, 40%, 98%, 1);
+    --clr-neutral-100: hsla(210, 40%, 96%, 1);
+    --clr-neutral-200: hsla(214, 32%, 91%, 1);
+    --clr-neutral-300: hsla(213, 27%, 84%, 1);
+    --clr-neutral-400: hsla(215, 20%, 65%, 1);
+    --clr-neutral-500: hsla(215, 16%, 47%, 1);
+    --clr-neutral-600: hsla(215, 19%, 35%, 1);
+    --clr-neutral-900: hsla(222, 47%, 11%, 1);
+    --clr-black: hsla(0, 0%, 0%, 1);
 
+    --clr-success-600: hsla(175, 84%, 32%, 1);
+    --clr-success-400: hsla(172, 66%, 50%, 1);
+    --clr-success-100: hsla(166, 76%, 97%, 1);
+
+    --clr-error-600: hsla(32, 95%, 44%, 1);
+    --clr-error-400: hsla(38, 92%, 50%, 1);
+    --clr-error-100: hsla(48, 96%, 89%, 1);
+
+    --clr-caution-600: hsla(347, 77%, 50%, 1);
+    --clr-caution-400: hsla(351, 95%, 71%, 1);
+    --clr-caution-100: hsla(356, 100%, 97%, 1);
+
+    --ff-primary: 'Inter', sans-serif;
+
+    --ff-body: var(--ff-primary);
+    --ff-heading: var(--ff-primary);
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700; 
+
+    --fs-200: 0.75rem;
+    --fs-300: 0.875rem;
+    --fs-400: 1rem;
+    --fs-600: 1.5rem;
+    --fs-800: 2rem;
+
+    --fs-body: var(--fs-300);
+    --fs-heading-web: var(--fs-800);
+    --fs-heading-mob: var(--fs-600);
+    --fs-heading: var(--fs-600);
+    --fs-button: var(--fs-300);
+    --fs-body1: var(--fs-400);
+}
+
+@media (min-width: 50em){
+    :root {
+        --fs-body: var(--fs-body1);
+        --fs-heading-mob: var(--fs-heading-web);
+    }
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
-}
-body{
-    display: grid;
-}
-#header {
-    padding: 1.25rem 4rem;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #E2E8F0;
-    height: 2rem;
-
-}
-#header a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#header a img {
-    width: auto;
-    height: 2.5rem;
-}
-#header ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#header ul img {
-    width: 1.25rem;
-    height: 1.25rem;
-    padding: 1rem 1rem;
+    font: inherit; /* It make all the font size to default one*/
 }
 
-/* Hero section */
-
-#hero {
-    background-image: url("Images/Others/BlurLayer.png");
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #E2E8F0;
-}
-#hero h1 {
-    font-family: 'Aboreto', cursive;
-    font-size: 2.5rem;
-    text-align: center;
-}
-#hero p{
-    font-family: 'Inter', sans-serif;
-    font-size: 1.25rem;
-    text-align: center;
-    padding: 1rem 0px;
-    line-height: 1.8rem;
-    color: #64748B;
-}
-#form{
-    padding: 2.5rem 0 0 0;
-}
-#form input {
-    background-color: transparent;
-    border: 1px solid #94A3B8;
-    border-radius: 0.75rem;
-    height: 3rem;
-    border-radius: 2rem 0px 0px 2rem;
-    border-width: 1px 0px 1px 1px;
-    width: 700px;
-    font-size: 1rem;
-    padding: 0 1.25rem;
-    
-    /* outline if effect after click on input */
-}
-#form input:hover {
-    border: 1px solid #9cb2d1;
-    border-radius: 2rem 0px 0px 2rem;
-    border-width: 1px 0px 1px 1px;
-}
-#form button {
-    font-family: 'Inter', sans-serif;
-    background: #4338CA;
-    border: none;
-    color: white;
-    border-radius: 0px 2rem 2rem 0px;
-    width: 250px;
-    height: 3rem;
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 0.03em;
-    cursor: pointer;
-    transition: 0.5s;
-}
-#form button:hover{
-    background: #3730A3;
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
 }
 
-/* Products section */
-
-#products{
-    display: flex;
-    padding: 4rem 4rem;
-    justify-content: space-between;
-}
-.span {
-    font-size: 3rem;
-    opacity: 0.16;
-    color: #0F172A;
-    font-family: 'Aboreto', cursive;
-}
-.Color_Border {
-    border: 1px solid #CBD5E1;
-    border-radius: 1.5rem;
-    overflow: hidden;
-}
-.P-photo {
-    width: 8rem;
-    height: 8rem;
-}
-.upper-section {
-    display: flex;
-}
-.Product_Name {
-    font-size: 1.25rem;
-    font-weight: bold;
-    padding: 1rem 0 0;
-    width: 15rem;
-}
-/*  */
-
-.Model_Color {
-    display: flex;
-    padding: 0.5rem 0 0;
-}
-.color1 {
-    width: 1rem;
-    height: 1rem;
-    background: #d6d6d6;
-    border-radius: 100%;
-    margin-right: 0.5rem;
-}
-.color2 {
-    width: 1rem;
-    height: 1rem;
-    background: #5d88bb;
-    border-radius: 100%;
-    margin-right: 0.5rem;
-}
-.color3 {
-    width: 1rem;
-    height: 1rem;
-    background: #3730A3;
-    border-radius: 100%;
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
 }
 
-/*  */
-
-.Storage_Model {
-    display: flex;
-    margin-top: 0.6rem;
+html,
+body {
+    height: 100%;
 }
-.storage_model1 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 0.4rem;
-    background: #F1F5F9;
-    margin-right: 0.4rem;
-    padding: 0.3rem 0 0.3rem 0.5rem;
-    border: 1px solid #94A3B8;
-    width: 6rem;
-}
-.storage_model2 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 0.4rem;
-    background: #F8FAFC;
-    padding: 0.3rem 0 0.3rem 0.5rem;
-    width: 6rem;
-}
-.model {
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: #475569;
-}
-.price {
-    font-size: 1rem;
-    margin-top: 0.1rem;
-    color: #0F172A;
-    font-weight: bold;
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
-/*  */
-
-.bottom-section {
-    display: flex;
-    margin: 1.5rem 0 1.5rem 1.5rem;
-}
-.bottom-section div {
-    /* padding: 0 1rem 0 0; */
-    margin: 0 2rem 0 0;
-}
-.F-name {
-    font-size: 0.8rem;
-    color: #475569;
-}
-.F-main {
-    font-size: 1.2rem;
-    color: #0F172A;
-    padding: 0.5rem 0 0.2rem 0;
-    font-weight: 600;
-}
-.F-sub {
-    font-size: 0.8rem;
-    color: #334155;
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
 }
 
-/* */
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility classes*/
+
+.text-primary-900 {
+    color: var(--clr-neutral-900)
+}
+.text-body-600 {
+    color: var(--clr-neutral-600)
+}
+.text-body-900 {
+    color: var(--clr-neutral-900)
+}
+.text-accent-400 {
+    color: var(--clr-neutral-400)
+}
+.text-accent-500 {
+    color: var(--clr-neutral-500)
+}
+.text-white {
+    color: var(--clr-white)
+}
 
 
+.bg-primary-900 {
+    background-color: var(--clr-neutral-900)
+}
+.bg-body-600 {
+    background-color: var(--clr-neutral-600)
+}
+.bg-body-900 {
+    background-color: var(--clr-neutral-900)
+}
+.bg-accent-400 {
+    background-color: var(--clr-neutral-400)
+}
+.bg-accent-500 {
+    background-color: var(--clr-neutral-500)
+}
+.bg-white {
+    background-color: var(--clr-white)
+}
 
-/* Footer section */
 
-#footer {
-    display: flex;
-    padding: 0.75rem 4rem;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #E2E8F0;
+.fw-bold { 
+    font-weight: var(--fw-bold);
 }
-#footer p {
-    color: #94A3B8;
+.fw-semibold {
+     font-weight: var(--fw-semi-bold);
 }
-#footer ul {
-    display: flex;
-    list-style: none;
-    
+.fw-medium {
+     font-weight: var(--fw-medium);
 }
-#footer ul li {
-    padding: 0 1rem;
+.fw-regular {
+     font-weight: var(--fw-regular);
 }
-#footer ul li a {
-    text-decoration: none;
-    color: #64748B;
-    transition: 0.3s;
+.fw-light {
+     font-weight: var(--fw-light);
 }
-#footer ul li a:hover {
-    color: #4338CA;
-    text-decoration: underline;
+
+
+.fs-primary-heading {
+    font-size: var(--fs-heading-mob); /*This changes on web to 32px*/
 }
+.fs-heading {
+    font-size: var(--fs-heading);
+}
+.fs-200 {
+    font-size: var(--fs-200);
+}
+.fs-300 {
+    font-size: var(--fs-300);
+}
+.fs-400 {
+    font-size: var(--fs-400);
+}
+
+
+/* Header start here */
+
