@@ -233,7 +233,7 @@ svg {
 
 .container {
     --max-width: 1512px;
-    --padding: 1rem;
+    --padding: ;
 
     width: min(var(--max-width), 100% - (var(--padding) * 2));
     margin-inline: auto;
@@ -289,4 +289,22 @@ input[type=email] {
     font-weight: var(--fw-regular);
     color: var(--clr-neutral-500);
     background-color: var(--clr-white);
+    /* transition: 0.05ms; */
+}
+input[type=email]:hover {
+    border: 2px solid var(--clr-neutral-400);
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1em;
+    border-bottom: 1px solid var(--clr-neutral-300);
+
+}
+.social-list a{
+    margin-left: var(--size-600);
 }
