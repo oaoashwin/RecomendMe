@@ -231,6 +231,8 @@ svg {
     padding-inline: var(--size-1000);
 }
 
+/* general styling */
+
 .container {
     --max-width: 1512px;
     --padding: 0em;
@@ -252,8 +254,6 @@ svg {
         padding-inline: var(--size-400);
     }
 }
-
-/* general styling */
 
 body {
     font-size: var(--fs-body);
@@ -304,13 +304,13 @@ input[type=email]:hover {
     align-items: center;
     padding-block: 1em;
     border-bottom: 1px solid var(--clr-neutral-300);
-    /* padding-inline: var(--size-1000); */
+    background-color: var(--clr-white);
 }
 .social-list a{
     margin-left: var(--size-600);
 }
 
-/*  */
+/* Hero section */
 
 .hero {
     text-align: center;
@@ -318,19 +318,28 @@ input[type=email]:hover {
     /* not decresing on small screens IDK why 
     I think it was not working because i writed that code up*/
 }
-.blur-background {
-    /* background: url(Images/others/Rectangle\ 38.png); */
-    /* width: 100%; */
-    /* height: auto; */
-    /* background-repeat: no-repeat; */
+.Blur {
+    position: absolute;
+    z-index: -1;
+    top: 4.1rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0.6;
+    filter: blur(60px);
 }
 .tag {
     display: block;
-    padding: var(--size-100) var(--size-500);
-    background-color: grey/*rgba(255, 255, 255, 0.3)*/;
+    padding: var(--size-100);
+    width: 8rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.3);
     border-radius: 5em;
     margin-bottom: var(--size-300);
 }
+
 @media (max-width: 480px) {
     .hero {
         padding-block: var(--size-800);
@@ -342,3 +351,12 @@ input[type=email]:hover {
 .sub-text {
     margin-bottom: 5em;
 }
+form {
+     display: flex;
+     flex-direction: column;
+     gap: var(--size-200);
+}
+form input{
+    
+}
+/*  
