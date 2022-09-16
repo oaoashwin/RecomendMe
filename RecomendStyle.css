@@ -216,6 +216,13 @@ svg {
 .padding-inline-400 {
     padding-inline: var(--size-400);
 }
+.padding-block-500 {
+    padding-block: var(--size-500);
+}
+/* Inline means let and right padding */
+.padding-inline-500 {
+    padding-inline: var(--size-500);
+}
 .padding-block-800 {
     padding-block: var(--size-800);
 }
@@ -363,6 +370,34 @@ form {
     gap: var(--size-200);
     max-width: 33em;
     width: 100%;
-    gap: var(--size-200;
+    gap: var(--size-200);
 }
-/*  
+
+/*  Steps section */
+.top-rounded-border {
+    border-radius: var(--size-500) var(--size-500) 0 0;
+    background-color: var(--clr-white);
+    border-top: 1px solid var(--clr-neutral-200);
+    padding-block: var(--size-600);
+}
+.step1 {
+    text-align: center;
+    
+}
+.category {
+    margin-bottom: var(--size-400);
+}
+
+.selectors {
+    display: flex;
+    gap: var(--size-200);
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+}
+.selectors p {
+    display: block;
+    padding: var(--size-200) var(--size-600);
+    border: 1px solid #475569;
+    border-radius: 24px;
+}
