@@ -290,11 +290,12 @@ input[type=email] {
     font-weight: var(--fw-regular);
     color: var(--clr-neutral-500);
     background-color: var(--clr-white);
-    /* transition: 0.05ms; */
+    transition: 150ms;
 }
 input[type=email]:hover {
-    border: 2px solid var(--clr-neutral-400);
+    border: 4px solid var(--clr-neutral-200);
 }
+
 
 /* Header */
 
@@ -351,12 +352,17 @@ input[type=email]:hover {
 .sub-text {
     margin-bottom: 5em;
 }
-form {
-     display: flex;
-     flex-direction: column;
-     gap: var(--size-200);
+.horizontally-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-form input{
-    
+form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-200);
+    max-width: 33em;
+    width: 100%;
+    gap: var(--size-200;
 }
 /*  
