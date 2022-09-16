@@ -253,7 +253,7 @@ svg {
     gap: 1rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 540px) {
     .even-columns {
         grid-auto-flow: row;
     }
@@ -348,7 +348,7 @@ input[type=email]:hover {
     margin-bottom: var(--size-300);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 540px) {
     .hero {
         padding-block: var(--size-800);
     }
@@ -382,7 +382,6 @@ form {
 }
 .step1 {
     text-align: center;
-    
 }
 .category {
     margin-bottom: var(--size-400);
@@ -392,12 +391,65 @@ form {
     display: flex;
     gap: var(--size-200);
     justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    overflow: scroll;
+    overflow: auto;
+    flex-wrap: wrap;
+    padding-top: var(--size-500);
 }
 .selectors p {
     display: block;
     padding: var(--size-200) var(--size-600);
     border: 1px solid #475569;
     border-radius: 24px;
+}
+/* Maybe we can add this for later
+
+.selectors p:hover {
+    background-color: var(--clr-white);
+} */
+
+/* Footer start from here */
+.footer-logo {
+    margin-bottom: var(--size-700);
+}
+.top-rounded-border-footer {
+    border-radius: var(--size-500) var(--size-500) 0 0;
+    background-color: var(--clr-white);
+    border-top: 1px solid var(--clr-neutral-200);
+    padding-block: var(--size-700);
+}
+.social-list-footer a {
+    margin-right: var(--size-400);
+}
+@media (max-width: 540px){
+    .footer-links{
+        text-align: center;
+    }
+    .logo-social-footer {
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        margin-bottom: var(--size-400);
+    }
+    .footer-logo {
+        margin-bottom: var(--size-500);
+    }
+    .step-main-txt {
+        font-size: var(--fs-400);
+    }
+}
+.footer-links ul li{
+    list-style: none;
+    margin-bottom: var(--size-200);
+}
+.footer-links ul li a{
+    color: var(--clr-neutral-900);
+    text-decoration: none;
+}
+.footer-links ul li a:hover {
+    color: var(--clr-primary-400);
+    text-decoration: underline;
 }
