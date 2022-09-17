@@ -313,6 +313,7 @@ input[type=email]:hover {
     padding-block: 1em;
     border-bottom: 1px solid var(--clr-neutral-300);
     background-color: var(--clr-white);
+    /* position: fixed; */
 }
 .social-list a{
     margin-left: var(--size-600);
@@ -385,6 +386,11 @@ form {
 }
 .category {
     margin-bottom: var(--size-400);
+    background-image: url(Images/others/mesh\ gradient\ 1.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
 }
 
 .selectors {
@@ -420,7 +426,7 @@ form {
     padding-block: var(--size-700);
 }
 .social-list-footer a {
-    margin-right: var(--size-400);
+    margin-inline: var(--size-400);
 }
 @media (max-width: 540px){
     .footer-links{
@@ -434,16 +440,32 @@ form {
         align-items: center;
         margin-bottom: var(--size-400);
     }
+    .social-list-footer a {
+        margin-inline: var(--size-600);
+    }
     .footer-logo {
         margin-bottom: var(--size-500);
     }
     .step-main-txt {
         font-size: var(--fs-400);
     }
+    .footer-links ul li a{
+        color: var(--clr-neutral-900);
+        text-decoration: none;
+        font-size: var(--fs-400);
+    }
+    .footer-links ul li{
+        list-style: none;
+        padding-block: var(--size-300);
+    }
 }
 .footer-links ul li{
     list-style: none;
-    margin-bottom: var(--size-200);
+    padding-block: var(--size-200);
+}
+.footer-links ul li:first-child{
+    /* list-style: none; */
+    padding-block: 0;
 }
 .footer-links ul li a{
     color: var(--clr-neutral-900);
