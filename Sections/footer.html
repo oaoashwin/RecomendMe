@@ -1,0 +1,94 @@
+<head>
+    <link rel="stylesheet" href="/RecomendStyle.css">
+</head>
+
+<div class="logo-social-footer">
+    <a href="#"><img class="footer-logo" src="Images/Logos/Black - 50-34.svg" alt=""></a>
+    <ul role="list" class="social-list-footer">
+        <a href="https://www.facebook.com/sugam.ashwin/" target="_blank"><span style="color: #1778f2;"><i class="fa-brands fa-facebook fa-xl"></span></i></a>
+        <a href="https://www.instagram.com/recomendme.india/" target="_blank"><span style="color: #dd2a7b;"><i class="fa-brands fa-instagram fa-xl"></span></i></a>
+        <a href="https://www.twitter.com/sugam_ashwin/" target="_blank"><span style="color: #00acee;"><i class="fa-brands fa-twitter fa-xl"></span></i></a>
+    </ul>
+</div>
+<div class="footer-links">
+    <ul>
+        <li class="text-accent-400" style="font-size: var(--fs-300);">Legals</li>
+        <li><a href="/Terms and condition.html">Terms & conditions</a></li>
+        <li><a href="/Privacy & Policy.html">Privacy and policy</a></li>
+        <li><a href="#">Feedback</a></li>
+    </ul>
+</div>
+<div class="footer-links">
+    <ul>
+        <li class="text-accent-400" style="font-size: var(--fs-300);">Related</li>
+        <li><a href="#">Abouts us</a></li>
+        <li><a href="#">Blog & articles</a></li>
+        <li><a href="#">Sitemap</a></li>
+    </ul>
+</div>
+
+<!-- Style yaha se suru hai -->
+
+<style>
+
+    .footer-logo {
+    margin-bottom: var(--size-700);
+}
+.top-rounded-border-footer {
+    border-radius: var(--size-500) var(--size-500) 0 0;
+    background-color: var(--clr-white);
+    border-top: 1px solid var(--clr-neutral-200);
+    padding-block: var(--size-700);
+}
+.social-list-footer a {
+    margin-inline: var(--size-400);
+}
+@media (max-width: 540px){
+    .footer-links{
+        text-align: center;
+    }
+    .logo-social-footer {
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        margin-bottom: var(--size-400);
+    }
+    .social-list-footer a {
+        margin-inline: var(--size-600);
+    }
+    .footer-logo {
+        margin-bottom: var(--size-500);
+    }
+    .step-main-txt {
+        font-size: var(--fs-400);
+    }
+    .footer-links ul li a{
+        color: var(--clr-neutral-900);
+        text-decoration: none;
+        font-size: var(--fs-400);
+    }
+    .footer-links ul li{
+        list-style: none;
+        padding-block: var(--size-300);
+    }
+}
+.footer-links ul li{
+    list-style: none;
+    padding-block: var(--size-200);
+}
+.footer-links ul li:first-child{
+    /* list-style: none; */
+    padding-block: 0;
+}
+.footer-links ul li a{
+    color: var(--clr-neutral-900);
+    text-decoration: none;
+}
+.footer-links ul li a:hover {
+    color: var(--clr-primary-400);
+    text-decoration: underline;
+}
+
+</style>

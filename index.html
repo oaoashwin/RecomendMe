@@ -24,6 +24,9 @@
     crossorigin="anonymous"></script>
     <!-- Javascript function to import form data in spreadsheet -->
     <script>
+
+        // Sending email data to google spreadsheet
+
 		function SubForm (){
 			$.ajax({
 				url:"https://api.apispreadsheets.com/data/ujfxkUV60DlAupWs/",
@@ -37,25 +40,15 @@
 				}
 			});
 		}
-	</script>
-    
+    </script> 
 </head>
+
 <body>
+<!-- Start -->
 
     <!-- Header is here -->
 
-<header id="primary-header">
-    <div class="container header padding-inline-1000">
-        <a href="#"><img src="Images/Logos/Black - 50-34.svg" alt="Logo"></a>
-
-        <ul role="list" class="social-list">
-            <a href="https://www.facebook.com/sugam.ashwin/" target="_blank"><span style="color: #1778f2;"><i class="fa-brands fa-facebook fa-xl"></span></i></a>
-            <a href="https://www.instagram.com/recomendme.india/" target="_blank"><span style="color: #dd2a7b;"><i class="fa-brands fa-instagram fa-xl"></span></i></a>
-            <a href="https://www.twitter.com/sugam_ashwin/" target="_blank"><span style="color: #00acee;"><i class="fa-brands fa-twitter fa-xl"></span></i></a>
-        </ul>
-
-    </div>
-</header>
+<header id="primary-header"></header>
 
 <main>
     <!-- Hero section is here -->
@@ -69,10 +62,10 @@
             <p class="sub-text fs-300 fw-regular text-body-600">Just select what you want and price range and see magic</p>
             <div class=" horizontally-center">
                 <form id="myForm">
-                    <input name="Email" type="email" placeholder="yourmail@example.com" required>
+                    <input name="Email" type="email" placeholder="yourmail@example.com" pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" required>
                     <!-- <input onclick="SubForm()" type="submit" value="Add me to list"> -->
                 </form>
-                <button onclick='SubForm()'>Submit</button>
+                <button onclick='SubForm()' form="myForm">Submit</button>
             </div>
         </div>
     </section>
@@ -127,33 +120,9 @@
 
 <!-- Footer is here -->
 
-<footer class="top-rounded-border-footer | even-columns container padding-inline-1000">
-    <div class="logo-social-footer">
-        <a href="#"><img class="footer-logo" src="Images/Logos/Black - 50-34.svg" alt=""></a>
-        <ul role="list" class="social-list-footer">
-            <a href="https://www.facebook.com/sugam.ashwin/" target="_blank"><span style="color: #1778f2;"><i class="fa-brands fa-facebook fa-xl"></span></i></a>
-            <a href="https://www.instagram.com/recomendme.india/" target="_blank"><span style="color: #dd2a7b;"><i class="fa-brands fa-instagram fa-xl"></span></i></a>
-            <a href="https://www.twitter.com/sugam_ashwin/" target="_blank"><span style="color: #00acee;"><i class="fa-brands fa-twitter fa-xl"></span></i></a>
-        </ul>
-    </div>
-    <div class="footer-links">
-        <ul>
-            <li class="text-accent-400" style="font-size: var(--fs-300);">Legals</li>
-            <li><a href="#">Terms & conditions</a></li>
-            <li><a href="#">Privacy and policy</a></li>
-            <li><a href="#">Feedback</a></li>
-        </ul>
-    </div>
-    <div class="footer-links">
-        <ul>
-            <li class="text-accent-400" style="font-size: var(--fs-300);">Related</li>
-            <li><a href="#">Abouts us</a></li>
-            <li><a href="#">Blog & articles</a></li>
-            <li><a href="#">Sitemap</a></li>
-        </ul>
-    </div>
-</footer>
+<footer id="primary-footer" class="top-rounded-border-footer | even-columns container padding-inline-1000"></footer>
 
-<!-- link -->
+<!-- End -->
+<script src="RecomendScript.js"></script>
 </body>
 </html>

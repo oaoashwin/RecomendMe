@@ -268,23 +268,6 @@ body {
     color: var(--clr-neutral-900);
 }
 
-
-
-/* Header */
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-block: 1em;
-    border-bottom: 1px solid var(--clr-neutral-300);
-    background-color: var(--clr-white);
-    /* position: fixed; */
-}
-.social-list a{
-    margin-left: var(--size-600);
-}
-
 /* Hero section */
 
 .hero {
@@ -428,6 +411,7 @@ form {
 } */
 
 /* Footer start from here */
+
 .footer-logo {
     margin-bottom: var(--size-700);
 }
