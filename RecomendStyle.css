@@ -268,42 +268,6 @@ body {
     color: var(--clr-neutral-900);
 }
 
-/* Button */
-
-button, [type=button] {
-    cursor: pointer;
-    text-decoration: none;
-    border: 0;
-    padding: 1em;
-    border-radius: 100vmax;
-    font-weight: var(--fw-semi-bold);
-    font-size: var(--fs-button);
-    color: var(--clr-white);
-    background-color: var(--clr-primary-400);
-    max-width: 33em;
-    width: 100%;
-}
-button:hover, 
-button:focus-visible {
-    background-color: var(--clr-primary-300);
-}
-
-input[type=email] {
-    cursor: text;
-    text-decoration: none;
-    border: 1px solid var(--clr-neutral-300);
-    padding: 1em;
-    border-radius: 100vmax;
-    text-align: center;
-    font-size: var(--fs-button);
-    font-weight: var(--fw-regular);
-    color: var(--clr-neutral-500);
-    background-color: var(--clr-white);
-    transition: 150ms;
-}
-input[type=email]:hover {
-    border: 4px solid var(--clr-neutral-200);
-}
 
 
 /* Header */
@@ -351,11 +315,52 @@ input[type=email]:hover {
     margin-bottom: var(--size-300);
 }
 
+/* Button */
+
+button, [type=submit] {
+    cursor: pointer;
+    text-decoration: none;
+    border: 0;
+    padding: 1em;
+    border-radius: 100vmax;
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-button);
+    color: var(--clr-white);
+    background-color: var(--clr-primary-400);
+    max-width: 33em;
+    width: 100%;
+}
+button:hover, 
+button:focus-visible {
+    background-color: var(--clr-primary-300);
+}
+
+input[type=email] {
+    cursor: text;
+    text-decoration: none;
+    border: 1px solid var(--clr-neutral-300);
+    padding: 1em;
+    border-radius: 100vmax;
+    text-align: center;
+    font-size: var(--fs-button);
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-500);
+    background-color: var(--clr-white);
+    transition: 150ms;
+    /* width: 33em; */
+    max-width: 33em;
+    width: 100%;
+}
+input[type=email]:hover {
+    border: 4px solid var(--clr-neutral-200);
+}
+
 @media (max-width: 540px) {
     .hero {
         padding-block: var(--size-800);
     }
 }
+
 .main-text {
  margin-bottom: var(--size-100);
 }
@@ -368,16 +373,20 @@ input[type=email]:hover {
     align-items: center;
     flex-direction: column;
     gap: var(--size-200);
+    
 }
 form {
-    display: flex;
-    flex-direction: column;
-    /* gap: var(--size-200); */
+    /* display: flex;
+    flex-direction: row;
+    gap: var(--size-200); */
     max-width: 33em;
     width: 100%;
 }
 
+
 /*  Steps section */
+
+
 .top-rounded-border {
     border-radius: var(--size-500) var(--size-500) 0 0;
     background-color: var(--clr-white);
