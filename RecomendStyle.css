@@ -267,6 +267,19 @@ body {
     font-family: var(--ff-body);
     color: var(--clr-neutral-900);
 }
+/* Header start from here */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1em;
+    border-bottom: 1px solid var(--clr-neutral-300);
+    background-color: var(--clr-white);
+}
+.social-list a{
+    margin-left: var(--size-600);
+}
 
 /* Hero section */
 
