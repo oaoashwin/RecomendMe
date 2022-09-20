@@ -133,7 +133,9 @@ svg {
   }
 }
 
-/* Utility classes*/
+/*  ///////////////
+Utility classes
+///////////////  */
 
 .text-primary-900 {
     color: var(--clr-neutral-900)
@@ -238,7 +240,9 @@ svg {
     padding-inline: var(--size-1000);
 }
 
-/* general styling */
+/*  ///////////////
+general styling
+///////////////  */
 
 .container {
     --max-width: 1512px;
@@ -267,7 +271,9 @@ body {
     font-family: var(--ff-body);
     color: var(--clr-neutral-900);
 }
-/* Header start from here */
+/*  ///////////////
+Header start from here
+///////////////  */
 
 .header {
     display: flex;
@@ -281,7 +287,9 @@ body {
     margin-left: var(--size-600);
 }
 
-/* Hero section */
+/*  ///////////////
+Hero section 
+///////////////  */
 
 .hero {
     text-align: center;
@@ -311,7 +319,9 @@ body {
     margin-bottom: var(--size-300);
 }
 
-/* Button */
+/*  ///////////////
+Button
+///////////////  */
 
 button, [type=submit] {
     cursor: pointer;
@@ -357,9 +367,59 @@ input[type=email]:hover {
     }
 }
 
-.main-text {
- margin-bottom: var(--size-100);
+/*  //////
+Text scrolling animation start
+//////  */
+
+.title-div {
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
 }
+.title {
+    margin-bottom: var(--size-200);
+}
+.slider {
+    overflow: hidden;
+    height: var(--size-800);
+}
+.slider span {
+    display: block;
+    padding-inline: 10px;
+    color: var(--clr-primary-400);
+    animation: animate 6s infinite;
+}
+@keyframes animate {
+    10% {
+        transform: translateY(-112%);
+    }
+    25% {
+        transform: translateY(-100%);
+    }
+    35% {
+        transform: translateY(-212%);
+    }
+    50% {
+        transform: translateY(-200%);
+    }
+    60% {
+        transform: translateY(-312%);
+    }
+    75% {
+        transform: translateY(-300%);
+    }
+    85% {
+        transform: translateY(-412%);
+    }
+    100% {
+        transform: translateY(-400%);
+    }
+}
+
+/*  //////
+Text scrolling animation end
+//////  */
+
 .sub-text {
     margin-bottom: 5em;
 }
@@ -380,7 +440,9 @@ form {
 }
 
 
-/*  Steps section */
+/*  ///////////////
+Steps section 
+///////////////  */
 
 
 .top-rounded-border {
@@ -389,27 +451,28 @@ form {
     border-top: 1px solid var(--clr-neutral-200);
     padding-block: var(--size-600);
 }
-.step1 {
-    text-align: center;
-}
-.category {
-    margin-bottom: var(--size-400);
+.Step-heading {
+    margin-bottom: var(--size-500);
     background-image: url(Images/others/mesh\ gradient\ 1.jpg);
     background-repeat: repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-font-smoothing: antialiased;
+    text-align: center;
 }
-
+.step-main-txt {
+    text-align: center;
+    margin-bottom: var(--size-400);
+}
 .selectors {
     display: flex;
     gap: var(--size-200);
-    justify-content: flex-start;
+    padding-inline: var(--size-200);
     justify-content: center;
     align-items: center;
     overflow: auto;
     flex-wrap: wrap;
-    padding-top: var(--size-500);
+
 }
 .selectors p {
     display: block;
@@ -417,13 +480,17 @@ form {
     border: 1px solid #475569;
     border-radius: 24px;
 }
+
+
 /* Maybe we can add this for later
 
 .selectors p:hover {
     background-color: var(--clr-white);
 } */
 
-/* Footer start from here */
+/* ///////////////
+Footer start from here 
+/////////////// */
 
 .footer-logo {
     margin-bottom: var(--size-700);
