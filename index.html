@@ -34,26 +34,6 @@
         
         gtag('config', 'G-NR4DDB86WE');
     </script>
-
-    <!-- Javascript function to import form data in spreadsheet -->
-    <script>
-
-        // Sending email data to google spreadsheet
-
-		function SubForm (){
-			$.ajax({
-				url:"https://api.apispreadsheets.com/data/ujfxkUV60DlAupWs/",
-				type:"post",
-				data:$("#myForm").serializeArray(),
-				success: function(){
-					alert("Thanks! We will let you know as soons as it launches.")
-				},
-				error: function(){
-					alert("Oops! contact us or try again later.")
-				}
-			});
-		}
-    </script> 
 </head>
 
 <body>
@@ -92,12 +72,13 @@
         
 
             <div class=" horizontally-center">
-                <form id="myForm">
+                <form name="Email-subscription" method="POST" data-netlify="true">
                     <input name="Email" type="email" placeholder="yourmail@example.com" pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" required>
-                    <!-- <input onclick="SubForm()" type="submit" value="Add me to list"> -->
+                    <input type="submit" value="Notify me when it launc">
                 </form>
-                <button onclick='SubForm()' form="myForm">Notify me when it launch</button>
+                <!-- <button onclick='SubForm()' form="myForm">Notify me when it launch</button> -->
             </div>
+
         </div>
     </section>
 
