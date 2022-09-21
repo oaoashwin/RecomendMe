@@ -422,6 +422,7 @@ Text scrolling animation end
 
 .sub-text {
     margin-bottom: 5em;
+    line-height: 1.7em;
 }
 .horizontally-center {
     display: flex;
