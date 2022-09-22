@@ -102,6 +102,7 @@ body {
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  min-height: 100vh;
 }
 
 /* A elements that don't have a class get default styles */
@@ -365,6 +366,9 @@ input[type=email]:hover {
     .hero {
         padding-block: var(--size-800);
     }
+    .about-us {
+        padding-block: var(--size-800);
+    }
 }
 
 /*  //////
@@ -498,6 +502,8 @@ Footer start from here
     background-color: var(--clr-white);
     border-top: 1px solid var(--clr-neutral-200);
     padding-block: var(--size-700);
+    top: 100%;
+    position: sticky;
 }
 .social-list-footer a {
     margin-inline: var(--size-400);
@@ -548,4 +554,74 @@ Footer start from here
 .footer-links ul li a:hover {
     color: var(--clr-primary-400);
     text-decoration: underline;
+}
+
+
+/* //////////
+About us page
+///////////// */
+
+/* header */
+.about-us {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding-block: var(--size-1000);
+    margin-bottom: var(--size-500);
+}
+.mesh-gradient-3 {
+    position: absolute;
+    width: 22.5em;
+    height: 14.75em;
+    top: 4.1rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0.6;
+    filter: blur(60px);
+    z-index: -1;
+}
+.page-name {
+    opacity: 0.4;
+    margin-bottom: var(--size-300);
+}
+.about-heading{
+    margin-bottom: var(--size-300);
+}
+.about-description {
+    line-height: 1.9em;
+    width: 100%;
+    max-width: 33em;
+    min-width: 1em;
+}
+
+
+/* Features */
+.features {
+    text-align: center;
+    padding-block: var(--size-700);
+}
+.features-header {
+    margin-bottom: var(--size-600);
+}
+.Features-container {
+
+}
+.features-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid transparent;
+    border-image: url(/Images/others/mesh\ gradient\ 2.jpg) 1 round;
+    border-radius: var(--size-600);
+}
+.gif-icon {
+    max-width: 4em;
+    width: 100%;
+}
+/* Media quary for about us */
+@media (max-width: 540px) {
+    .about-us {
+        padding-block: var(--size-800);
+    }
 }
