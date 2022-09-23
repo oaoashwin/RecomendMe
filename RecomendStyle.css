@@ -600,28 +600,107 @@ About us page
 .features {
     text-align: center;
     padding-block: var(--size-700);
+    margin-bottom: var(--size-700);
+}
+.Features-container {
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--size-400);
 }
 .features-header {
     margin-bottom: var(--size-600);
-}
-.Features-container {
-
 }
 .features-list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
     border-image: url(/Images/others/mesh\ gradient\ 2.jpg) 1 round;
     border-radius: var(--size-600);
+    padding: 1.75em var(--size-400) var(--size-800) var(--size-400);
 }
 .gif-icon {
+    min-width: auto;
     max-width: 4em;
     width: 100%;
+    margin-bottom: var(--size-300);
 }
+.features-list h4 {
+    margin-bottom: var(--size-200);
+}
+@media (max-width:640px) {
+    .Features-container {
+        grid-auto-flow: row;
+    }
+}
+/* Team & Jobs */
+.our-team {
+    text-align: center;
+    padding-block: var(--size-700);
+    margin-bottom: var(--size-800);
+}
+.team-list {
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--size-400);
+    margin-bottom: var(--size-800);
+}
+.member {
+    text-align: left;
+    padding: var(--size-400) var(--size-700);
+    border: 1px solid var(--clr-neutral-300);
+    border-radius: var(--size-400);
+}
+.member h5 {
+    margin-bottom: var(--size-400);
+}
+.member-social-list a{
+    margin-right: var(--size-400);
+}
+.member-social-list span {
+    color: var(--clr-neutral-900);
+}
+.recruitment-banner {
+    background-color: var(--clr-primary-300);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--size-400);
+    padding: var(--size-700) var(--size-900);
+    border-radius: var(--size-600);
+    color: var(--clr-white);
+}
+.recruitment-button{
+    cursor: pointer;
+    text-decoration: none;
+    border: 0;
+    padding: 1em;
+    border-radius: 100vmax;
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-button);
+    color: var(--clr-primary-300);
+    background-color: var(--clr-white);
+    max-width: 15em;
+    width: 100%;
+}
+.recruitment-button:hover{
+    opacity: 0.9;
+}
+
 /* Media quary for about us */
 @media (max-width: 540px) {
     .about-us {
         padding-block: var(--size-800);
     }
 }
+@media (max-width:740px) {
+    .team-list{
+        grid-auto-flow: row;
+    }
+    .recruitment-banner {
+        justify-content: center;
+    }
+}
+
+/* About us end here */
