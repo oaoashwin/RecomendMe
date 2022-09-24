@@ -12,6 +12,7 @@
     --clr-neutral-600: hsla(215, 19%, 35%, 1);
     --clr-neutral-900: hsla(222, 47%, 11%, 1);
     --clr-black: hsla(0, 0%, 0%, 1);
+    --clr-gradient: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
 
     --clr-success-600: hsla(175, 84%, 32%, 1);
     --clr-success-400: hsla(172, 66%, 50%, 1);
@@ -614,8 +615,7 @@ About us page
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 3px solid transparent;
-    border-image: url(/Images/others/mesh\ gradient\ 2.jpg) 1 round;
+    border: 3px solid var(--clr-neutral-200);
     border-radius: var(--size-600);
     padding: 1.75em var(--size-400) var(--size-800) var(--size-400);
 }
@@ -653,12 +653,23 @@ About us page
 }
 .member h5 {
     margin-bottom: var(--size-400);
+    font-size: var(--fs-heading);
 }
 .member-social-list a{
     margin-right: var(--size-400);
 }
 .member-social-list span {
     color: var(--clr-neutral-900);
+    transition: 150ms;
+}
+.fb:hover{
+    color: #1778f2;
+}
+.insta:hover{
+    color: #dd2a7b;
+}
+.twitter:hover{
+    color: #00acee;
 }
 .recruitment-banner {
     background-color: var(--clr-primary-300);
@@ -692,6 +703,9 @@ About us page
 @media (max-width: 540px) {
     .about-us {
         padding-block: var(--size-800);
+    }
+    .member h5{
+        font-size: var(--fs-body1);
     }
 }
 @media (max-width:740px) {
