@@ -607,6 +607,7 @@ About us page
     display: grid;
     grid-auto-flow: column;
     gap: var(--size-400);
+    grid-auto-columns: 1fr;
 }
 .features-header {
     margin-bottom: var(--size-600);
@@ -644,6 +645,7 @@ About us page
     grid-auto-flow: column;
     gap: var(--size-400);
     margin-bottom: var(--size-800);
+    grid-auto-columns: 1fr;
 }
 .member {
     text-align: left;
