@@ -1,2 +1,45 @@
 @import url(../Styleguide.css);
 
+/* header */
+
+.Blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-block: var(--size-1000);
+}
+.mesh-gradient-3 {
+    position: absolute;
+    opacity: 0.3;
+    filter: blur(100px);
+    width: 22.5em;
+    height: 14.75em;
+    top: 4.1rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: -1;
+}
+.page-name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    opacity: 0.4;
+}
+.about-heading{
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+.about-description {
+    line-height: 22px;
+    font-size: 1.125em;
+    text-align: center;
+    width: 100%;
+    min-width: 1em;
+}
+/* 
+*/
