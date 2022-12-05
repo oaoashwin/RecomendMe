@@ -1,0 +1,159 @@
+@import url(Styleguide.css);
+
+
+/* header */
+.about-us {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding-block: var(--size-1000);
+    margin-bottom: var(--size-500);
+}
+.mesh-gradient-3 {
+    position: absolute;
+    width: 22.5em;
+    height: 14.75em;
+    top: 4.1rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0.6;
+    filter: blur(60px);
+    z-index: -1;
+}
+.page-name {
+    opacity: 0.4;
+    margin-bottom: var(--size-300);
+}
+.about-heading{
+    margin-bottom: var(--size-300);
+}
+.about-description {
+    line-height: 1.9em;
+    width: 100%;
+    max-width: 33em;
+    min-width: 1em;
+}
+
+
+/* Features */
+.features {
+    text-align: center;
+    padding-block: var(--size-700);
+    margin-bottom: var(--size-700);
+}
+.Features-container {
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--size-400);
+}
+.features-header {
+    margin-bottom: var(--size-600);
+}
+.features-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid var(--clr-neutral-200);
+    border-radius: var(--size-600);
+    padding: 1.75em var(--size-400) var(--size-800) var(--size-400);
+}
+.gif-icon {
+    min-width: auto;
+    max-width: 4em;
+    width: 100%;
+    margin-bottom: var(--size-300);
+}
+.features-list h4 {
+    margin-bottom: var(--size-200);
+}
+@media (max-width:640px) {
+    .Features-container {
+        grid-auto-flow: row;
+    }
+}
+/* Team & Jobs */
+.our-team {
+    text-align: center;
+    padding-block: var(--size-700);
+    margin-bottom: var(--size-800);
+}
+.team-list {
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--size-400);
+    margin-bottom: var(--size-800);
+}
+.member {
+    text-align: left;
+    padding: var(--size-400) var(--size-700);
+    border: 1px solid var(--clr-neutral-300);
+    border-radius: var(--size-400);
+}
+.member h5 {
+    margin-bottom: var(--size-400);
+    font-size: var(--fs-heading);
+}
+.member-social-list a{
+    margin-right: var(--size-400);
+}
+.member-social-list span {
+    color: var(--clr-neutral-900);
+    transition: 150ms;
+}
+.fb:hover{
+    color: #1778f2;
+}
+.insta:hover{
+    color: #dd2a7b;
+}
+.twitter:hover{
+    color: #00acee;
+}
+.recruitment-banner {
+    background-color: var(--clr-primary-300);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--size-400);
+    padding: var(--size-700) var(--size-900);
+    border-radius: var(--size-600);
+    color: var(--clr-white);
+}
+.recruitment-button{
+    cursor: pointer;
+    text-decoration: none;
+    border: 0;
+    padding: 1em;
+    border-radius: 100vmax;
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-button);
+    color: var(--clr-primary-300);
+    background-color: var(--clr-white);
+    max-width: 15em;
+    width: 100%;
+}
+.recruitment-button:hover{
+    opacity: 0.9;
+}
+
+/* Media quary for about us */
+@media (max-width: 540px) {
+    .about-us {
+        padding-block: var(--size-800);
+    }
+    .member h5{
+        font-size: var(--fs-body1);
+    }
+}
+@media (max-width:740px) {
+    .team-list{
+        grid-auto-flow: row;
+    }
+    .recruitment-banner {
+        justify-content: center;
+    }
+}
+
+/* About us end here */

@@ -1,0 +1,276 @@
+:root {
+    --clr-primary-400: hsla(245, 58%, 51%, 1);
+    --clr-primary-300: hsla(243, 75%, 59%, 1);
+
+    --clr-white: hsla(0, 0%, 100%, 1);
+    --clr-neutral-50: hsla(210, 40%, 98%, 1);
+    --clr-neutral-100: hsla(210, 40%, 96%, 1);
+    --clr-neutral-200: hsla(214, 32%, 91%, 1);
+    --clr-neutral-300: hsla(213, 27%, 84%, 1);
+    --clr-neutral-400: hsla(215, 20%, 65%, 1);
+    --clr-neutral-500: hsla(215, 16%, 47%, 1);
+    --clr-neutral-600: hsla(215, 19%, 35%, 1);
+    --clr-neutral-900: hsla(222, 47%, 11%, 1);
+    --clr-black: hsla(0, 0%, 0%, 1);
+    --clr-gradient: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+
+    --clr-success-600: hsla(175, 84%, 32%, 1);
+    --clr-success-400: hsla(172, 66%, 50%, 1);
+    --clr-success-100: hsla(166, 76%, 97%, 1);
+
+    --clr-error-600: hsla(32, 95%, 44%, 1);
+    --clr-error-400: hsla(38, 92%, 50%, 1);
+    --clr-error-100: hsla(48, 96%, 89%, 1);
+
+    --clr-caution-600: hsla(347, 77%, 50%, 1);
+    --clr-caution-400: hsla(351, 95%, 71%, 1);
+    --clr-caution-100: hsla(356, 100%, 97%, 1);
+
+    --ff-primary: 'Inter', sans-serif;
+
+    --ff-body: var(--ff-primary);
+    --ff-heading: var(--ff-primary);
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700; 
+
+    --fs-200: 0.75rem;
+    --fs-300: 0.875rem;
+    --fs-400: 1rem;
+    --fs-600: 1.5rem;
+    --fs-800: 2rem;
+
+    --fs-body: var(--fs-300);
+    --fs-button: var(--fs-300);
+    --fs-body1: var(--fs-400);
+    --fs-heading-mob: var(--fs-600);
+    --fs-heading: var(--fs-600);
+    --fs-heading-web: var(--fs-800);
+
+    /* 4px, 8px, 12px, 16px, 20px, 24px, 32rem, 40px, 48px */
+    --size-100: .25rem;
+    --size-200: .5rem;
+    --size-300: .75rem;
+    --size-400: 1rem;
+    --size-500: 1.25rem;
+    --size-600: 1.5rem;
+    --size-700: 2rem;
+    --size-800: 2.5rem;
+    --size-900: 3rem;
+    --size-1000: 4rem;
+}
+
+@media (min-width: 50em){
+    :root {
+        --fs-body: var(--fs-body1);
+        --fs-heading-mob: var(--fs-heading-web);
+    }
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit; /* It make all the font size to default one*/
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*  ///////////////
+Utility classes
+///////////////  */
+
+.text-primary-900 {
+    color: var(--clr-neutral-900)
+}
+.text-body-600 {
+    color: var(--clr-neutral-600)
+}
+.text-body-900 {
+    color: var(--clr-neutral-900)
+}
+.text-accent-400 {
+    color: var(--clr-neutral-400)
+}
+.text-accent-500 {
+    color: var(--clr-neutral-500)
+}
+.text-white {
+    color: var(--clr-white)
+}
+
+
+.bg-primary-900 {
+    background-color: var(--clr-neutral-900)
+}
+.bg-body-600 {
+    background-color: var(--clr-neutral-600)
+}
+.bg-body-900 {
+    background-color: var(--clr-neutral-900)
+}
+.bg-accent-400 {
+    background-color: var(--clr-neutral-400)
+}
+.bg-accent-500 {
+    background-color: var(--clr-neutral-500)
+}
+.bg-white {
+    background-color: var(--clr-white)
+}
+
+
+.fw-bold { 
+    font-weight: var(--fw-bold);
+}
+.fw-semibold {
+     font-weight: var(--fw-semi-bold);
+}
+.fw-medium {
+     font-weight: var(--fw-medium);
+}
+.fw-regular {
+     font-weight: var(--fw-regular);
+}
+.fw-light {
+     font-weight: var(--fw-light);
+}
+
+
+.fs-primary-heading {
+    font-size: var(--fs-heading-mob); /*This changes on web to 32px*/
+}
+.fs-heading {
+    font-size: var(--fs-heading);
+}
+.fs-200 {
+    font-size: var(--fs-200);
+}
+.fs-300 {
+    font-size: var(--fs-300);
+}
+.fs-400 {
+    font-size: var(--fs-400);
+}
+
+/* Block means all side padding */
+.padding-block-400 {
+    padding-block: var(--size-400);
+}
+/* Inline means left and right padding */
+.padding-inline-400 {
+    padding-inline: var(--size-400);
+}
+.padding-block-500 {
+    padding-block: var(--size-500);
+}
+/* Inline means let and right padding */
+.padding-inline-500 {
+    padding-inline: var(--size-500);
+}
+.padding-block-800 {
+    padding-block: var(--size-800);
+}
+/* Inline means let and right padding */
+.padding-inline-800 {
+    padding-inline: var(--size-800);
+}
+.padding-block-1000 {
+    padding-block: var(--size-1000);
+}
+/* Inline means let and right padding */
+.padding-inline-1000 {
+    padding-inline: var(--size-1000);
+}
+
+/*  ///////////////
+general styling
+///////////////  */
+
+.container {
+    --max-width: 1512px;
+    --padding: 0em;
+
+    width: min(var(--max-width), 100% - (var(--padding) * 2));
+    margin-inline: auto;
+}
+.even-columns {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+    grid-auto-flow: 1fr;
+}
+
+@media (max-width: 540px) {
+    .even-columns {
+        grid-auto-flow: row;
+    }
+    .padding-inline-1000 {
+        padding-inline: var(--size-400);
+    }
+}
+
+body {
+    font-size: var(--fs-body);
+    font-family: var(--ff-body);
+    color: var(--clr-neutral-900);
+}
