@@ -139,6 +139,10 @@ svg {
 Utility classes
 ///////////////  */
 
+.center {
+    text-align: center;
+}
+
 .text-primary-900 {
     color: var(--clr-neutral-900)
 }
@@ -199,15 +203,19 @@ Utility classes
 .fs-primary-heading {
     font-size: var(--fs-heading-mob); /*This changes on web to 32px*/
 }
+/* 24px - 32px*/
 .fs-heading {
     font-size: var(--fs-heading);
 }
+/* 12px */
 .fs-200 {
     font-size: var(--fs-200);
 }
+/* 14px */
 .fs-300 {
     font-size: var(--fs-300);
 }
+/* 16px */
 .fs-400 {
     font-size: var(--fs-400);
 }
@@ -261,9 +269,15 @@ Utility classes
 }
 
 /*  ///////////////
-general styling
+Reusable styling
 ///////////////  */
 
+.section-heading {
+    text-align: center;
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-heading-web);
+    color: var(--clr-neutral-900);
+}
 .container {
     --max-width: 1512px;
     --padding: 0em;
