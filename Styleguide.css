@@ -275,7 +275,7 @@ Reusable styling
 .section-heading {
     text-align: center;
     font-weight: var(--fw-semi-bold);
-    font-size: var(--fs-heading-web);
+    font-size: var(--fs-heading-mob);
     color: var(--clr-neutral-900);
 }
 .container {
