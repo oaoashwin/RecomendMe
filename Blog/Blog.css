@@ -47,28 +47,32 @@
 .categories {
     display: flex;
     padding-block: var(--size-800);
-    justify-content: space-between;
     gap: var(--size-800);
+    justify-content: center;
+    overflow-x: scroll;
+    flex-shrink: inherit;
 }
 .category {
+    text-decoration: none;
     border: 1px solid var(--clr-neutral-200);
     border-radius: var(--size-600);
-}
-.category a {
-    text-decoration: none;
+    padding: var(--size-700) var(--size-1000) var(--size-700) var(--size-1000);
 }
 
 /* Featured Cards */
 
 .Blog-even-columns {
     display: flex;
-    justify-content: space-between;
     gap: var(--size-600);
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
 }
 .featured-card {
     padding: var(--size-600);
     border: 2px solid var(--clr-neutral-200);
     border-radius: var(--size-600);
+    box-shadow: 0px 40px 60px -70px rgba(43, 236, 215, 0.7);
 }
 .blog-contents {
     padding: 1.5em 1.5em 0 1.5em;
@@ -98,4 +102,14 @@
 .other-card {
     border: 2px solid var(--clr-neutral-200);
     border-radius: var(--size-600);
+    width: 100%;
+
+    background: rgba(45, 212, 191, 0.02);
+    /* Status/Teal 400 */
+    /* This is is for mobile category */
+    border-left: 2px solid #2DD4BF;
+    border-radius: var(--size-700);
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
 }
