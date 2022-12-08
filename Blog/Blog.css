@@ -76,12 +76,14 @@
 /* Featured Cards */
 
 .Blog-even-columns {
-    display: grid;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: var(--size-600);
-    grid-template-columns: repeat(auto-fill, minmax(288px , auto));
-    grid-auto-columns: 288px;
 }
 .featured-card {
+    max-width: 442px;
+    min-height: 284px;
     padding: var(--size-600);
     border: 2px solid var(--clr-neutral-200);
     border-radius: var(--size-600);
@@ -119,13 +121,13 @@
 /* Other blog cards */
 
 .other-card {
+    
+    max-width: 442px;
+    min-height: 96px;
     border: 2px solid var(--clr-neutral-200);
     border-radius: var(--size-600);
-    width: 100%;
-
     background: rgba(45, 212, 191, 0.02);
-    /* Status/Teal 400 */
-    /* This is is for mobile category */
+    /* This color is for mobile category */
     border-left: 2px solid #2DD4BF;
     border-radius: var(--size-700);
     border-top: none;
