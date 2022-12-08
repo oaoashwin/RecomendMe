@@ -49,25 +49,27 @@
     justify-content: space-between;
     gap: var(--size-600);
     overflow-x: scroll;
-    padding-block: var(--size-300);
+    padding-block: var(--size-800);
+    
 }
 .category {
     color: var(--clr-neutral-900);
     text-decoration: none;
     text-align: center;
     width: 100%;
-    padding: var(--size-400) var(--size-600);
-    border-radius: var(--size-400);
+    padding: var(--size-700) var(--size-1000);
+    border-radius: var(--size-600);
     border: 1px solid var(--clr-neutral-200);
 }
 
-@media (min-width: 800px) {
-    .categories [
-        padding-block: var(--size-800);
-    ]
+@media (max-width: 800px) {
+    .categories {
+        padding-block: var(--size-300);
+        gap: var(--size-200);
+    }
     .category {
-        padding: var(--size-700) var(--size-1000);
-        border-radius: var(--size-600);
+        padding: var(--size-400) var(--size-600);
+        border-radius: var(--size-400);
     }
 }
 
@@ -75,12 +77,13 @@
 
 .Blog-even-columns {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: var(--size-600);
-    justify-content: space-between;
-    align-items: center;
-    /* flex-wrap: wrap; */
 }
 .featured-card {
+    max-width: 442px;
+    min-height: 284px;
     padding: var(--size-600);
     border: 2px solid var(--clr-neutral-200);
     border-radius: var(--size-600);
@@ -95,12 +98,15 @@
     margin-bottom: var(--size-100);
 }
 .category-name {
+    font-size: clamp(0.625em, 1em, 1.25em);
     letter-spacing: 0.04em;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--clr-neutral-500);
+    
 }
-.reading-time {
+.reading-time time {
+    font-size: clamp(0.625em, 1em, 1.25em);
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--clr-neutral-500);
@@ -108,17 +114,20 @@
 .blog-contents a {
     text-decoration: none;
 }
+.Card-title {
+    font-size: clamp(1em, 1.5em, 1.8em);
+}
 
 /* Other blog cards */
 
 .other-card {
+    
+    max-width: 442px;
+    min-height: 96px;
     border: 2px solid var(--clr-neutral-200);
     border-radius: var(--size-600);
-    width: 100%;
-
     background: rgba(45, 212, 191, 0.02);
-    /* Status/Teal 400 */
-    /* This is is for mobile category */
+    /* This color is for mobile category */
     border-left: 2px solid #2DD4BF;
     border-radius: var(--size-700);
     border-top: none;
