@@ -1,0 +1,39 @@
+@import url(../Styleguide.css);
+/* ---------------------------------- */
+
+/* ------- Title -------- */
+main {
+    margin: auto;
+    max-width: 678px;
+}
+.article_title {
+    padding-block: var(--size-1000);
+    text-align: center;
+}
+.category_date {
+    color: var(--clr-neutral-600);
+    text-transform: uppercase;
+    font-weight: var(--fw-medium);
+    margin-bottom: var(--size-200);
+}
+.blog-shareables {
+    display: flex;
+    gap: var(--size-600);
+    justify-content: center;
+    margin-top: var(--size-400);
+}
+
+
+/* ------- Blog-Intro -------- */
+.blog-intro {
+    text-align: center;
+}
+.blog_image img {
+    margin-bottom: var(--size-200);
+}
+.blog_image a {
+    color: var(--clr-neutral-600);
+}
+.blog-intro p {
+    margin-top: var(--size-800);
+}
