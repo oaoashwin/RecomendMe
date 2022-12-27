@@ -35,5 +35,56 @@ main {
     color: var(--clr-neutral-600);
 }
 .blog-intro p {
+    text-align: left;
     margin-top: var(--size-800);
+}
+/* ------- Middle part of blog ------- */
+.award {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+    background: rgba(45, 212, 191, 0.1);
+    border: 1px solid #2DD4BF;
+    border-radius: 8px;
+    max-width: max-content;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--clr-success-600);
+    margin-bottom: var(--size-200);
+}
+.product_images {
+    display: flex;
+    gap: var(--size-400);
+}
+.product_images li img {
+    border: 2px solid var(--clr-neutral-200);
+    border-radius: var(--size-400);
+}
+.product_specs {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product_specs div {
+    flex-basis: 33%;
+}
+
+
+/* -----Media query for this page ----- */
+
+@media (max-width:678px) {
+    main {
+        padding-inline: var(--size-400);
+    }
+    .blog-intro p {
+        font-size: var(--fs-400);
+        line-height: 28px;
+    }
+    .description p {
+        font-size: var(--fs-400);
+        line-height: 28px;    
+    }
+    .product_specs div {
+        flex-basis: 50%;
+    }
 }
