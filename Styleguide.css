@@ -228,6 +228,9 @@ Utility classes
     letter-spacing: -0.003em;
     color: var(--clr-neutral-800);
 }
+.fs-600 {
+    font-size: var(--fs-600);
+}
 
 /* Block means all side padding */
 .padding-block-400 {
